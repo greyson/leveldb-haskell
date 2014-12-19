@@ -142,6 +142,7 @@ mkOpts Options{..} = do
   where
     ccompression NoCompression = noCompression
     ccompression Snappy        = snappyCompression
+    ccompression Zlib          = zlibCompression
 
     maybeSetCache :: OptionsPtr -> Int -> IO (Maybe CachePtr)
     maybeSetCache opts_ptr size =

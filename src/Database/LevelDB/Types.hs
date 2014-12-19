@@ -36,7 +36,7 @@ import           Database.LevelDB.C
 newtype Snapshot = Snapshot SnapshotPtr deriving (Eq)
 
 -- | Compression setting
-data Compression = NoCompression | Snappy deriving (Eq, Show)
+data Compression = NoCompression | Snappy | Zlib deriving (Eq, Show)
 
 -- | User-defined comparator
 newtype Comparator = Comparator (ByteString -> ByteString -> Ordering)

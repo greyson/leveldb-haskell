@@ -53,6 +53,7 @@ newtype CompressionOpt = CompressionOpt { compressionOpt :: CInt }
 #{enum CompressionOpt, CompressionOpt
  , noCompression     = 0
  , snappyCompression = 1
+ , zlibCompression   = 2
  }
 
 
